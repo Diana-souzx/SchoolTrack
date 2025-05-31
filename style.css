@@ -1,1 +1,61 @@
+*{
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin: 0;
+    font-size: 20px;
+}
+body{
+    background-image: url(./img/fundo-cidade-branco.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+#logo-school{
+    position: absolute;
+    left: 22%;
+    width: 500px;
+    height: 200px;
+    top: 8%;
+}
+#onibus-icon{
+    height: 170px;
+    position: absolute;
+    right: 0%;
+    bottom: 0%;
+
+}
+#superior{
+   position: absolute;
+    left: 20%;
+    top: 3%;
+}
+#inferior{
+    position: absolute;
+    top: 39%;
+    left: 30%;
+}
+h1{
+    font-size: 35px;
+}
+.log-user{
+    background-color: white;
+    height: 60px;
+    width: 200px;
+    border-color: white;
+    border-radius: 30px;
+    cursor: pointer;
+}
+.log-user:hover{
+    background-color: rgb(188, 226, 252);
+    border-color: rgb(188, 226, 252);
+    transform: scale(1.1);
+}
+#entrar{
+    position: absolute;
+    bottom: 10%;
+    left: 29%;
+}
+#cadastrar-se{
+    position: absolute;
+    bottom: 10%;
+    left: 50%;
+}
 

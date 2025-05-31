@@ -4,8 +4,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bem Vindo(a)!</title>
+    <link rel="stylesheet" href="./configuração/reset.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
+    <h1 id="superior">Bem Vindo(a) ao</h1>
+    <img id="logo-school" src="./img/logo-versão-azul.png" alt="">
+    <h1 id="inferior">Mobilidade inteligente na palma da sua mão!</h1>
     
+    <button class="log-user" id="entrar">Entrar</button>
+    <button class="log-user" id="cadastrar-se">Cadastrar-se</button>
+
+    <img id="onibus-icon" src="./img/onibus.png" alt="">
 </body>
+<script>
+    document.getElementById("entrar").addEventListener("click", function() {
+        window.location.href = "./html/login.html";
+    });
+    document.getElementById("cadastrar-se").addEventListener("click", function() {
+        window.location.href = "./html/cadastro.html";
+    });
+
+</script>
 </html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Entrar</title>
+    <link rel="stylesheet" href="../configuração/reset.css">
+    <link rel="stylesheet" href="../css/login.css">
+</head>
+<body>
+    <form action="../php/login.php" method="post">
+    <div id="conteiner-log">
+        <div id="superior-cont">
+            <img id="icon-onibus" src="../img/icon-onibus-logo.png" alt="">
+            <h1>Entrar</h1>
+        </div><br>
+
+
+        <label for="email">Seu e-mail:</label><br>
+        <input type="email" name="email" id="email" placeholder="exemplo@gmail.com" required><br><br>
+
+        <label for="senha">Sua senha:</label><br>
+        <input type="password" name="senha" id="senha" maxlength="10" minlength="5" required><br>
+
+        <a href="../html/novaSenha.html">Esqueceu sua senha?</a><br><br>
+
+        <input type="submit" id="enviar" value="Entrar">
+    </div>
+    </form>
+    <img id="onibus" src="../img/onibus.png" alt="">
+</body>
+</ht

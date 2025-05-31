@@ -1,0 +1,60 @@
+
+body{
+    background-image: url(../img/fundo-cidade.png);
+    background-size: 100%;
+    font-size: 25px;
+}
+#conteiner-log{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    padding: 40px;
+    background-color: white;
+    border-radius: 30px;
+}
+#icon-onibus{
+    height: 70px;
+    width: 70px;
+}
+#superior-cont{
+    display: flex;
+    justify-content: center;
+    font-size: 50px;
+}
+h1{
+    margin-top: 1%;
+}
+#email,#senha{
+    height: 40px;
+    width: 400px;
+    border-radius: 30px;
+}
+a{
+    font-size: 17px;
+}
+a:hover{
+    color: #2f81ec;
+}
+#enviar{
+    background-color: #004aad;
+    border-color: #004aad;
+    border-radius: 30px;
+    font-size: 20px;
+    color: white;
+    width: 220px;
+    height: 50px;
+    margin-left: 100px;
+    cursor: pointer;
+}
+#enviar:hover{
+    background-color: #2f81ec;
+    border-color: #2f81ec;
+    transform: scale(1.1);
+
+}
+#onibus{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
