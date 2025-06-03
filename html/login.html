@@ -20,7 +20,7 @@
         <input type="email" name="email" id="email" placeholder="exemplo@gmail.com" required><br><br>
 
         <label for="senha">Sua senha:</label><br>
-        <input type="password" name="senha" id="senha" maxlength="10" minlength="5" required><br>
+        <input type="password" name="senha" id="senha" maxlength="10" minlength="5" placeholder="12345..." required><br>
 
         <a href="../html/novaSenha.html">Esqueceu sua senha?</a><br><br>
 
@@ -29,4 +29,9 @@
     </form>
     <img id="onibus" src="../img/onibus.png" alt="">
 </body>
-</ht
+<script>
+    document.getElementById("enviar").addEventListener("click", function() {
+        window.location.href = "../html/incial.php";
+    });
+</script>
+</html>

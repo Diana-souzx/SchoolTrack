@@ -1,4 +1,18 @@
 body{
     background-image: url(../img/fundo-cidade.png);
     background-size: 100%;
+    font-size: 25px;
+}
+#conteiner-cad{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    padding: 40px;
+    background-color: white;
+    border-radius: 30px;
+}
+.inputs-labels{
+    display: flex;
+    justify-content: center;
 }

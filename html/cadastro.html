@@ -8,6 +8,32 @@
     <link rel="stylesheet" href="../css/cadastro.css">
 </head>
 <body>
-    
+    <form action="../php/cadastro.php" method="post">
+        <div id="conteiner-cad">
+            <div id="superior-cont">
+                <img src="../img/icon-onibus-logo.png" alt="">
+                <h1>Cadastrar-se</h1>
+            </div><br>
+            
+            <div class="inputs-labels">
+                <label for="nome">Seu nome:</label><br>
+                <input type="text" required><br>
+
+                <label for="bairro">Seu bairro:</label><br>
+                <select name="bairro" id="bairro" required>
+                    <option value="vazio"></option>
+                    <option value="Matriz">Matriz</option>
+                </select><br>
+            </div><br>
+
+            <div class="inputs-labels">
+                <label for="senha">Sua senha:</label>
+                <input type="password" name="senha" id="senha" required>
+
+                <label for="telefone">Seu telefone:</label>
+                <input type="number" name="telefone" id="telefone" maxlength="11" minlength="11" required>
+            </div>
+        </div>
+    </form>
 </body>
 </html>
