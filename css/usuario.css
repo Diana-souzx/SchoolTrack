@@ -1,0 +1,139 @@
+body{
+    background-image: url(../img/fundo-cidade.png);
+    background-size: 100%;
+}
+#container {
+    position: absolute;
+    right: 0;
+    height: 100%;
+    padding: 20px;
+    background-color: white;
+    top: 0;
+    width: 60%;
+}
+h1{
+    display: flex;
+    justify-content: center;
+    font-size: 40px;
+    margin-bottom: 10px;
+    color: #003080;
+}
+#logo {
+    position: absolute;
+    width: 400px;
+    height: 300px;
+    left: 0;
+}
+#foto-perfil {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+#upload-foto{
+    border: 1px solid;
+    border-color: #000000;
+    border-radius: 20px;
+    height: 30px;
+    width: 350px;
+}
+#perfil{
+    background-color: #003080;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+}
+#upload-foto {
+    cursor: pointer;
+}
+#bio, #nascimento, #rede-social{
+    padding: 10px;
+    border-color:  #ccc;
+    border-radius: 5px;
+}
+#bio{
+    width: 500px;
+    right: 0;
+}
+#atualizar {
+    background-color: #004aad;
+    color: white;
+    border: 0;
+    height: 60px;
+    width: 200px;
+    border-radius: 30px;
+    position: absolute;
+    bottom: 10%;
+    left: 40%;
+    cursor: pointer;
+}
+
+#atualizar:hover {
+    background-color: #2f81ec;
+    border-color: #2f81ec;
+    transform: scale(1.05);
+}
+
+.bloco1, .bloco2{
+    margin-top: 40px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+#container-flex{
+    display: flex;
+    gap: 30px;
+}
+
+@media screen and (max-width: 667px) {
+  body {
+    background-size: auto;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  #container {
+    position: static;
+    width: auto;
+    height: auto;
+    padding: 15px;
+  }
+  #logo{
+    display: none;
+  }
+  h1 {
+    font-size: 28px;
+    text-align: center;
+    color: #003080;
+  }
+  #foto-perfil {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+  }
+  #perfil {
+    width: 100px;
+    height: 100px;
+  }
+  #upload-foto {
+    width: 70%;
+    height: 35px;
+  }
+  #bio, #nascimento, #rede-social {
+    width: 90%;
+    font-size: 16px;
+  }
+  #atualizar {
+    position: static;
+    width: 100%;
+    margin-top: 20px;
+    height: 50px;
+    font-size: 18px;
+  }
+  #container-flex {
+    flex-direction: column;
+    gap: 20px;
+  } 
+  .bloco1, .bloco2 {
+    margin-top: 20px;
+  }
+}

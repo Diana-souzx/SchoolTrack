@@ -12,7 +12,115 @@ body{
     background-color: white;
     border-radius: 30px;
 }
-.inputs-labels{
+#icon-onibus{
+    height: 70px;
+    width: 70px;
+}
+#superior-cont{
     display: flex;
     justify-content: center;
+    font-size: 50px;
 }
+#cadastro-duplo {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+}
+.part-one, .part-two {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+#nome, #bairro, #senha, #telefone, #email, #senha2{
+    width: 350px;
+    height: 25px;
+}
+#cadastre{
+    width: 200px;
+    height: 45px;
+    background-color: #004aad;
+    margin-left: 75px;
+    border-radius: 20px;
+    border-color: #004aad;
+    cursor: pointer;
+    transition: transform 0.3s ease
+}
+#cadastre:hover{
+    background-color: #2f81ec;
+    border-color: #2f81ec;
+    transform: scale(1.1);
+    color: white;
+}
+#onibus-icon{
+    width: 300px;
+    height: 150px;
+    background: url('../img/onibus.png') no-repeat center;
+    background-size: contain;
+    position: fixed;
+    left: 120%;
+    top: 70%;
+    transition: left 2s linear;
+    opacity: 0;
+    pointer-events: none;
+}
+#onibus-icon.animar{
+    left: -120%;
+    opacity: 1;
+}
+
+@media screen and (max-width: 667px){
+
+    html, body {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+    }
+    body {
+        background-image: url(../img/fundo-cidade.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-attachment: fixed;
+    }
+    #conteiner-cad {
+        position: static;
+        width: 90%;
+        margin: 20px auto;
+        padding: 20px;
+        transform: none;
+        border-radius: 20px;
+    }
+    #superior-cont {
+       display: flex;
+        align-items: center;
+        font-size: 30px;
+        gap: 10px;
+    }
+    #cadastro-duplo {
+        flex-direction: column;
+        gap: 20px;
+    }
+    .part-one, .part-two {
+        width: 100%;
+        gap: 15px;
+    }
+    #nome, #bairro, #senha, #telefone, #email, #senha2 {
+        width: 100%;
+        height: 35px;
+        font-size: 16px;
+    }
+    #cadastre {
+        width: 100%;
+        margin-left: 0;
+        font-size: 18px;
+    }
+    #icon-onibus {
+        height: 50px;
+        width: 50px;
+    }
+    #onibus-icon {
+        display: none;
+    }
+}
+

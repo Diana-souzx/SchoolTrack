@@ -45,6 +45,7 @@ a:hover{
     height: 50px;
     margin-left: 100px;
     cursor: pointer;
+    transition: transform 0.3s ease
 }
 #enviar:hover{
     background-color: #2f81ec;
@@ -52,8 +53,81 @@ a:hover{
     transform: scale(1.1);
 
 }
-#onibus{
-    position: absolute;
-    right: 0;
-    bottom: 0;
+#onibus-icon{
+    width: 300px;
+    height: 150px;
+    background: url('../img/onibus.png') no-repeat center;
+    background-size: contain;
+    position: fixed;
+    left: 120%;
+    top: 70%;
+    transition: left 2s linear;
+    opacity: 0;
+    pointer-events: none;
+}
+#onibus-icon.animar{
+    left: -120%;
+    opacity: 1;
+}
+
+@media screen and (max-width: 667px){
+
+    html, body {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+    }
+    body {
+        background-image: url(../img/fundo-cidade.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-attachment: fixed;
+    }
+    #conteiner-log {
+        position: absolute;
+        width: 90%;
+        left: 5% auto;
+        padding: 10px;   
+        border-radius: 20px;
+        top: 50%;
+    }
+    #superior-cont {
+        align-items: center;
+        font-size: 30px;
+        gap: 10px;
+    }
+    #icon-onibus {
+        height: 50px;
+        width: 50px;
+        margin-bottom: 10px;
+    }
+    h1 {
+        font-size: 24px;
+        margin-top: 10px;
+        text-align: center;
+    }
+    #email, #senha {
+        width: 100%;
+        height: 35px;
+        font-size: 16px;
+        border-radius: 20px;
+    }
+    a {
+        font-size: 16px;
+        display: block;
+        text-align: center;
+        margin-top: 10px;
+    }
+    #enviar {
+        width: 100%;
+        margin-left: 0;
+        font-size: 18px;
+        height: 45px;
+        margin-top: 5%;
+        margin-bottom: 10%;
+    }
+    #onibus-icon {
+        display: none;
+    }
 }

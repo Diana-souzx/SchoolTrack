@@ -1,0 +1,121 @@
+*{
+    margin: 0;
+}
+body{
+    background-color: #a0d8ef;
+}
+i{
+    color: white;   
+}
+#logo{
+    height: 100px;
+}
+#pesquisar{
+    height: 30px;
+}
+#search{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+header{
+    background-color: #004aad;
+    position: static;
+    margin: 0;
+}
+nav{
+    display: flex;
+    align-items: center;
+    gap: 1000px;
+}
+#direita{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+#rodape{
+    background-color: #004aad;
+    position: static;
+    margin:0; 
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    gap: 490px;
+    margin-top: 50%;
+}
+#sobrenos{
+    margin-left: 60px;
+}
+#sobrenos,#avisos{
+    background-color: transparent;
+    border: 0;
+    color: white;
+    font-size: 15px;
+    cursor: pointer;
+}
+#perfil,#menu{
+    background-color: transparent;
+    border: 0;
+    cursor: pointer;
+}
+#menu:hover{
+    transition: all 0.8s;
+    font-size: 50px;
+}
+#sobrenos:hover,#avisos:hover{
+    color: #9fdef5;
+}
+#faleconosco{
+    color: white;
+    text-align: center;
+    font-size: 10px;
+}
+#sobreempresa{
+    position: fixed;
+    padding: 20px;
+    background-color: white;
+    border-radius: 20px;
+    top: 50%;
+    transform: translateY(-30%);
+    width: 500px;
+    left: 2%;
+    display: none;
+}
+.title{
+    color: #004aad;
+}
+.fechardesc{
+    background-color:rgb(133, 170, 255) ;
+    border-color: rgb(133, 170, 255);
+    border-radius: 5px;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+}
+.fechardesc:hover{
+    background-color: #a0d8ef;
+}
+#fecharsobre{
+    display: flex;
+    align-items: center;
+    gap: 140px;
+}
+#alerta{
+    position: absolute;
+    padding: 20px;
+    background-color: white;
+    border-radius: 20px;
+    top: 75%;
+    transform: translateY(-30%);
+    width: 700px;
+    left: 30%;
+    display: none;
+}
+.cima-aviso{
+    display: flex;
+    justify-content: center;
+    gap: 550px;
+}
+p{
+    font-size: 20px;
+}

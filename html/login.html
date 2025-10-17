@@ -24,14 +24,9 @@
 
         <a href="../html/novaSenha.html">Esqueceu sua senha?</a><br><br>
 
-        <input type="submit" id="enviar" value="Entrar">
+        <input onclick="entrar(event)" type="submit" id="enviar" value="Entrar">
     </div>
     </form>
-    <img id="onibus" src="../img/onibus.png" alt="">
+    <div id="onibus-icon"></div>
 </body>
-<script>
-    document.getElementById("enviar").addEventListener("click", function() {
-        window.location.href = "../html/incial.php";
-    });
-</script>
 </html>

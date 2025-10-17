@@ -16,10 +16,14 @@ body{
     top: 8%;
 }
 #onibus-icon{
-    height: 170px;
-    position: absolute;
-    right: 0%;
-    bottom: 0%;
+    width: 300px;
+    height: 150px;
+    background: url('./img/onibus.png') no-repeat center;
+    background-size: contain;
+    position: fixed;
+    left: 120%;
+    top: 70%;
+    transition: left 2s linear;
 
 }
 #superior{
@@ -58,4 +62,66 @@ h1{
     bottom: 10%;
     left: 50%;
 }
+#onibus-icon.animar{
+    left: -120%;
+}
 
+@media screen and (max-width: 667px) {
+    * {
+        font-size: 16px;
+    }
+    html, body {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+    }
+    body {
+        background-image: url(./img/fundo-cidade-branco.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-attachment: fixed;
+    }
+    #logo-school {
+        position: static;
+        width: 70%;
+        margin-left: 13%;
+        height: auto;  
+        display: block;
+        margin-top: 10%;
+    }
+    #superior{
+        position: static !important;
+        margin-top: 10%;
+        width: 70%;
+        text-align: center;
+
+    }
+    #inferior {
+        margin-top: 10%;
+        position: static;
+        width: 70%;
+        margin-left: 13%;
+        text-align: center;
+    }
+    h1 {
+        font-size: 20px;
+    }
+    #entrar{
+        position: absolute;
+        display: block;
+        width: 70%;
+        left: 13%;
+        top: 65%;
+    }
+    #cadastrar-se{
+        position: absolute;
+        display: block;
+        width: 70%;
+        left: 13%;
+        top: 80%;
+    } 
+    #onibus-icon {
+        display: none;
+    }
+}
